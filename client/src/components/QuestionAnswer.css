@@ -1,0 +1,37 @@
+.question-answer {
+}
+
+.options {
+  margin-top: 4rem;
+}
+
+.option {
+  max-width: 50rem;
+  padding: 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.option:hover {
+  background-color: var(--color-secondary);
+}
+
+.question {
+  font-size: 1.6rem;
+}
+
+.chapter-heading {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
+
+.question-details h2 {
+  margin-bottom: 1rem;
+}
+
+.question-details {
+  margin-bottom: 5rem;
+}

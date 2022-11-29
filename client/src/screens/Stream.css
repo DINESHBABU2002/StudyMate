@@ -1,0 +1,23 @@
+.stream {
+  margin-top: 1rem;
+}
+
+.stream-heading {
+  font-size: 1.8rem;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .stream {
+    margin-left: 5vw;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 32rem);
+  }
+}

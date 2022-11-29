@@ -1,0 +1,50 @@
+.subject-page-title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.subject-title-flex {
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subject-list {
+  max-width: 100rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.5s;
+}
+
+.subject-list:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.subject-name {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.total-chapters {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.subject-description {
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .subject-page {
+    margin-top: 3rem 2rem;
+  }
+}

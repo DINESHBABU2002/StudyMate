@@ -1,0 +1,25 @@
+.heading-container {
+  margin-top: 1rem;
+}
+
+.progress-bar-container {
+  margin-top: 2rem;
+  width: 60rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.progress-bar {
+  width: 15rem;
+}
+
+.course-sub-title {
+  font-size: 1.6rem;
+}
+
+.couse-values {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}

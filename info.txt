@@ -1,0 +1,34 @@
+
+JWT TOKEN 
+
+USER NAME 
+PASSWORD
+TENANT ID
+
+
+{
+  questions:[
+    {
+      question_id:1,
+      question:"question 1",
+      option 1:"VALUE",
+option2:"VALUE",
+ option 3:"VALUE",
+option 4:"VALUE"
+    }
+  ]
+}
+
+
+secrete key JWT
+RoosterTech@2022
+
+
+
+SERVER FALSE-REQUEST
+SERVER SUSPICES-REQUEST
+
+
+
+LAST LOGIN---> REQUIREMENTS (3)
+user id, last login(UTC), login count++ ;

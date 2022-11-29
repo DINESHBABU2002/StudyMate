@@ -1,0 +1,143 @@
+.login-page {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.login-page-left {
+  padding: 3rem 6rem;
+}
+
+.left-title {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-size: 3.2rem;
+}
+
+.left-content {
+  font-size: 1.2rem;
+}
+
+.left-content {
+  margin-bottom: 0.2rem;
+}
+
+.left-content-last {
+  margin-bottom: 2rem;
+}
+
+.login-input {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  width: 35rem;
+  border-radius: 5px;
+  border: 1px #666 solid;
+}
+
+.login-input:focus {
+  /* border: none; */
+  /* border: 1px var(--color-primary) solid; */
+}
+
+.form-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.login-input-container {
+  margin-top: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  width: 18px;
+  position: absolute;
+
+  top: 17px;
+  right: 10px;
+  color: #666;
+}
+
+.forgot-password-container {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-password-button {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.signup-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-button {
+  padding: 1rem;
+  color: var(--color-primary);
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.sign-up-button:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.input-field-error {
+  margin-top: 2rem;
+  padding: 1rem 7rem;
+  color: red;
+  font-size: 1.6rem;
+  border: 1px solid red;
+}
+
+.line-break {
+  margin: 1.4rem 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.login-page-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+}
+
+.sub-heading {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.heading {
+  font-size: 3.6rem;
+  color: var(--color-primary);
+  margin: 1rem 0;
+}
+
+.image-wrapper img {
+  width: 50rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-page-right {
+    display: none;
+  }
+}

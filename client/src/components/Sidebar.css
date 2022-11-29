@@ -1,0 +1,100 @@
+.sidebar-container {
+  display: flex;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar {
+  width: 25rem;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar-disable {
+  transition: all 1s;
+  display: none;
+  width: 0;
+}
+
+.sidebar-page {
+  margin-left: 25rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.full-sidebar-page {
+  margin: 0;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 15rem;
+}
+
+.sidebar-elements {
+  padding: 2rem 0;
+  display: flex;
+  padding-left: 4rem;
+  gap: 1.8rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-elements:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.sidebar-icons-container {
+  margin-top: 2rem;
+}
+
+.sidebar-icon-content {
+  font-size: 1.4rem;
+}
+
+.sidebar-closebtn {
+  position: absolute;
+  right: 13px;
+  top: 10px;
+}
+
+.sidebar-icon {
+  width: 22px;
+  font-size: 1.8rem;
+}
+
+.sidebar-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 7.8rem;
+}
+
+.user-information-container {
+  /* margin-top: 15rem; */
+}
+.user-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar-flex {
+    gap: 20rem;
+  }
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "question": "What care should one take towards Customer's intellectual property. Select the most appropriate choice? 1",
+    "viewed": false,
+    "answered": false,
+    "type": "dropdown",
+    "options": [
+      {
+        "value": "Yes",
+        "selected": false
+      },
+      {
+        "value": "No",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What care should one take towards Customer's intellectual property. Select the most appropriate choice? 2",
+    "viewed": false,
+    "answered": false,
+    "options": [
+      {
+        "value": "Should be shared with all",
+        "selected": false
+      },
+      {
+        "value": "Does not require any attention",
+        "selected": false
+      },
+      {
+        "value": "Should be kept secured and confidential",
+        "selected": false
+      },
+      {
+        "value": "Should be kept confidential only if explicitly requested by the customer",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What care should one take towards Customer's intellectual property. Select the most appropriate choice? 3",
+    "viewed": false,
+    "answered": false,
+    "options": [
+      {
+        "value": "Should be shared with all",
+        "selected": false
+      },
+      {
+        "value": "Does not require any attention",
+        "selected": false
+      },
+      {
+        "value": "Should be kept secured and confidential",
+        "selected": false
+      },
+      {
+        "value": "Should be kept confidential only if explicitly requested by the customer",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What care should one take towards Customer's intellectual property. Select the most appropriate choice? 4",
+    "viewed": false,
+    "answered": false,
+    "options": [
+      {
+        "value": "Should be shared with all",
+        "selected": false
+      },
+      {
+        "value": "Does not require any attention",
+        "selected": false
+      },
+      {
+        "value": "Should be kept secured and confidential",
+        "selected": false
+      },
+      {
+        "value": "Should be kept confidential only if explicitly requested by the customer",
+        "selected": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What care should one take towards Customer's intellectual property. Select the most appropriate choice? 5",
+    "viewed": false,
+    "answered": false,
+    "options": [
+      {
+        "value": "Should be shared with all",
+        "selected": false
+      },
+      {
+        "value": "Does not require any attention",
+        "selected": false
+      },
+      {
+        "value": "Should be kept secured and confidential",
+        "selected": false
+      },
+      {
+        "value": "Should be kept confidential only if explicitly requested by the customer",
+        "selected": false
+      }
+    ]
+  }
+]

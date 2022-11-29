@@ -1,0 +1,38 @@
+.stream-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.stream-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image-wrapper {
+  width: 28rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 27.5rem;
+}
+
+.stream-name {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.stream-topics {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.chapters {
+  font-size: 1.2rem;
+}
+
+.btn-wrapper {
+  float: right;
+}

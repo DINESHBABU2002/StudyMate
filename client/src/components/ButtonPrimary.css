@@ -1,0 +1,13 @@
+.button-primary {
+  width: 20rem;
+  background-color: var(--color-primary);
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.disabled {
+  background: #bae6fd;
+}
