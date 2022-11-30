@@ -22,13 +22,76 @@ import ChapterScreen from "./screens/ChapterScreen";
 import TopicScreen from "./screens/TopicScreen";
 import ScoreScreen from "./screens/ScoreScreen";
 import ScoreListScreen from "./screens/ScoreListScreen";
+import AddCourse from "./screens/AddCourse";
+import AddStream from "./screens/AddStream";
+import AddSubject from "./screens/AddSubject";
+import AddChapters from "./screens/AddChapters";
+import AddTopic from "./screens/AddTopics";
+import ListAll from "./screens/ListAll";
+import AddQuestions from "./screens/AddQuestions";
 
 const App = () => {
   const dispatch = useDispatch();
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("use"));
 
   return (
     <Routes>
+      <Route
+        path="/addchapter"
+        element={
+          <Sidebar>
+            <AddChapters />
+          </Sidebar>
+        }
+      ></Route>
+      <Route
+        path="/listall"
+        element={
+          <Sidebar>
+            <ListAll />
+          </Sidebar>
+        }
+      ></Route>
+      <Route
+        path="/addcourse"
+        element={
+          <Sidebar>
+            <AddCourse />
+          </Sidebar>
+        }
+      />
+      <Route
+        path="/addstream"
+        element={
+          <Sidebar>
+            <AddStream />
+          </Sidebar>
+        }
+      ></Route>
+      <Route
+        path="/addquestions"
+        element={
+          <Sidebar>
+            <AddQuestions />
+          </Sidebar>
+        }
+      ></Route>
+      <Route
+        path="/addsubject"
+        element={
+          <Sidebar>
+            <AddSubject />
+          </Sidebar>
+        }
+      ></Route>
+      <Route
+        path="/addtopic"
+        element={
+          <Sidebar>
+            <AddTopic />
+          </Sidebar>
+        }
+      ></Route>
       <Route path="/" element={<Navigate to={"/login"} />}></Route>
       <Route
         path="/login"

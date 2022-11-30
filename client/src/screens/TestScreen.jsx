@@ -228,14 +228,14 @@ const TakeTest = () => {
               <p className="questions-info-text">No of Questions</p>
               <p className="questions-info-text">: {noOfQuestions}</p>
             </div>
-            <div className="question-info-flex">
+            {/* <div className="question-info-flex">
               <p className="questions-info-text">No of Questions Viewed</p>
               <p className="questions-info-text">: {noOfQuestionsViewed}</p>
-            </div>
-            <div className="question-info-flex margin-btm">
+            </div> */}
+            {/* <div className="question-info-flex margin-btm">
               <p className="questions-info-text">No of Questions Answered</p>
               <p className="questions-info-text">: {"1"}</p>
-            </div>
+            </div> */}
             <ButtonPrimary onClick={submitHandler}>Submit</ButtonPrimary>
           </div>
         </div>

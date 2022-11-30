@@ -11,19 +11,22 @@ import { useEffect } from "react";
 
 const Sidebar = (props) => {
   const isSidebarVisible = useSelector((state) => state.layouts.sidebar);
+
   useEffect(() => {
     const fetchdata = async () => {
       const response = await fetch("api/v1/me");
 
       const json = await response.json();
 
-      console.log("USER  --- ", json.user.username);
+      console.log("USER  --- ", json);
       setName(json.user.username);
+      setRole(json.user.role);
     };
 
     fetchdata();
   }, []);
-  const [name, setName] = useState("-");
+  const [name, setName] = useState("");
+  const [role, setRole] = useState("student");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -31,7 +34,6 @@ const Sidebar = (props) => {
     const response = await fetch("api/v1/logout");
 
     if (response.ok) {
-      return <LoginScreen />;
     }
   };
 
@@ -91,29 +93,58 @@ const Sidebar = (props) => {
                 </svg>
                 <p className="sidebar-icon-content">Home</p>
               </div>
-              <div className="sidebar-elements">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="sidebar-icon"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
+              {role === "admin" ? (
+                <div
+                  className="sidebar-elements"
+                  onClick={() => {
+                    navigate("/listall");
+                  }}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <p className="sidebar-icon-content">User Management</p>
-              </div>
-              <div
-                className="sidebar-elements"
-                onClick={() => {
-                  navigate("/scores");
-                }}
-              >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="sidebar-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                    />
+                  </svg>
+
+                  <p className="sidebar-icon-content">Add New Materials</p>
+                </div>
+              ) : (
+                <div
+                  className="sidebar-elements"
+                  onClick={() => {
+                    navigate("/scores");
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="sidebar-icon"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                    />
+                  </svg>
+
+                  <p className="sidebar-icon-content">Score's</p>
+                </div>
+              )}
+            </div>
+            <div className="user-information-container">
+              <div className="sidebar-elements">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -125,16 +156,10 @@ const Sidebar = (props) => {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
                   />
                 </svg>
 
-                <p className="sidebar-icon-content">Score's</p>
-              </div>
-            </div>
-            <div className="user-information-container">
-              <div className="sidebar-elements">
-                <img src={avatar} alt="user-avatar" className="user-avatar" />
                 <p className="sidebar-icon-content user-name">{name}</p>
               </div>
               <div className="sidebar-elements">

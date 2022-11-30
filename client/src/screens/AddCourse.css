@@ -1,0 +1,36 @@
+.page-heading {
+  margin-top: 2rem;
+}
+
+.form-container {
+  margin-top: 5rem;
+}
+
+.add-course-container {
+  display: flex;
+  justify-content: center;
+}
+
+.course-input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.input-field-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.course-name {
+  width: 300px;
+}
+
+.add-button {
+  margin-top: 2rem;
+}
+
+.popup-container {
+}

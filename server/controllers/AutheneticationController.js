@@ -83,9 +83,13 @@ exports.me = catchAsync(async (req, res, next) => {
   if (!(await user.comparePassword(userPassword))) {
     return next(new AppError("Invalid Password", 403));
   }
+  console.log(user);
   res
     .status(200)
-    .json({ status: "success", user: { username: user.userGivenName } });
+    .json({
+      status: "success",
+      user: { username: user.userGivenName, role: user.userRolePrimary },
+    });
 });
 
 //role admin user company-admin

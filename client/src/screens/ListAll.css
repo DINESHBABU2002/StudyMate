@@ -1,0 +1,21 @@
+.list-container {
+  margin-top: 5rem;
+  margin-left: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 35rem);
+  row-gap: 5rem;
+}
+
+.lists {
+  background-color: red;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
